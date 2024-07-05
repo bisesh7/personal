@@ -32,10 +32,12 @@
     transform: translateY(-50%);
     width: 100%;
     background-color: #1d1e21;
-    color: white;
+    color: #888888;
     transition: top 0.7s ease, transform 0.8s ease; /* Transition for navbar slide and transform */
 
+    .link,
     a {
+      cursor: pointer;
       color: #888888;
       text-decoration: none;
       transition: color 0.3s ease; /* Transition for navbar links color change on hover */
@@ -65,7 +67,7 @@
       }
 
       .active {
-        color: #ddd; /* Color change on hover */
+        color: #ddd;
       }
     }
 
