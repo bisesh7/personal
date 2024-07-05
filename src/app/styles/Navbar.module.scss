@@ -36,12 +36,12 @@
     transition: top 0.7s ease, transform 0.8s ease; /* Transition for navbar slide and transform */
 
     a {
-      color: white;
+      color: #888888;
       text-decoration: none;
       transition: color 0.3s ease; /* Transition for navbar links color change on hover */
 
       &:hover {
-        color: #ddd; /* Color change on hover */
+        color: #ffffff; /* Color change on hover */
       }
     }
 
@@ -53,6 +53,19 @@
 
       .navbar-icon {
         margin-bottom: 5px;
+      }
+
+      .navbarSpace {
+        margin-right: 45px;
+      }
+
+      small {
+        font-size: 0.75em;
+        letter-spacing: 1px;
+      }
+
+      .active {
+        color: #ddd; /* Color change on hover */
       }
     }
 
