@@ -1,0 +1,78 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: #cea16c;
+    padding: 10px;
+    border-radius: 4px;
+
+    i {
+      font-size: 24px;
+      color: white;
+      transition: transform 0.3s;
+    }
+
+    &.open i {
+      transform: rotate(45deg);
+    }
+  }
+
+  .navbar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    transition: top 0.3s ease, transform 0.3s ease;
+    padding: 15px 0;
+
+    a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ddd;
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    transition: transform 0.3s ease, top 0.3s ease;
+
+    &.shrink {
+      transform: scale(0.95);
+      top: 70px;
+    }
+  }
+
+  &.open {
+    .navbar {
+      top: 0;
+      transform: translateY(0);
+    }
+
+    .content {
+      transform: scale(0.95);
+      top: 70px;
+    }
+  }
+}
