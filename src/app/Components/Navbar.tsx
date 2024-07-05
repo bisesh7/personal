@@ -27,37 +27,37 @@ const Navbar: React.FC = () => {
         <i className={`bi ${isOpen ? "bi-x" : "bi-list"}`}></i>
       </div>
       <nav className={`${styles.navbar} ${isOpen ? styles.open : ""}`}>
-        <a href="#">
+        <a href="#" className="me-5">
           <div className="d-flex justify-content-center">
             <BiHome className="navbar-icon" size={"1.4em"} />
           </div>
           Home
         </a>
-        <a href="#">
+        <a href="#" className="me-5">
           <div className="d-flex justify-content-center">
             <BiUser className="navbar-icon" size={"1.4em"} />
           </div>
           About
         </a>
-        <a href="#">
+        <a href="#" className="me-5">
           <div className="d-flex justify-content-center">
             <BiBook className="navbar-icon" size={"1.4em"} />
           </div>
           Resume
         </a>
-        <a href="#">
+        <a href="#" className="me-5">
           <div className="d-flex justify-content-center">
             <BiBriefcase className="navbar-icon" size={"1.4em"} />
           </div>
           Portfolio
         </a>
-        <a href="#">
+        <a href="#" className="me-5">
           <div className="d-flex justify-content-center">
             <BiLogoBlogger className="navbar-icon" size={"1.4em"} />
           </div>
           Blog
         </a>
-        <a href="#">
+        <a href="#" className="me-5">
           <div className="d-flex justify-content-center">
             <BiMailSend className="navbar-icon" size={"1.4em"} />
           </div>
