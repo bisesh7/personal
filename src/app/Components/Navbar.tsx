@@ -35,14 +35,14 @@ const Navbar: React.FC = () => {
         onClick={toggleNavbar}
       >
         {isOpen ? (
-          <BiX className="bi" size="2em" />
+          <BiX className="bi" size="3em" />
         ) : (
-          <BiMenu className="bi" size="2em" />
+          <BiMenu className="bi" size="3em" />
         )}
       </div>
       <div className={`${styles.navbarContainer} ${isOpen ? styles.open : ""}`}>
         <nav className={styles.navbar}>
-          <a href="#" className="me-5">
+          <a href="#" className="me-4">
             <div className="d-flex justify-content-center">
               <BiHome className="navbar-icon" size={"1.4em"} />
             </div>
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
               <small>HOME</small>
             </strong>
           </a>
-          <a href="#" className="me-5">
+          <a href="#" className="me-4">
             <div className="d-flex justify-content-center">
               <BiUser className="navbar-icon" size={"1.4em"} />
             </div>
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
               <small>ABOUT</small>
             </strong>
           </a>
-          <a href="#" className="me-5">
+          <a href="#" className="me-4">
             <div className="d-flex justify-content-center">
               <BiBook className="navbar-icon" size={"1.4em"} />
             </div>
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
               <small>RESUME</small>
             </strong>
           </a>
-          <a href="#" className="me-5">
+          <a href="#" className="me-4">
             <div className="d-flex justify-content-center">
               <BiBriefcase className="navbar-icon" size={"1.4em"} />
             </div>
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
               <small>PORTFOLIO</small>
             </strong>
           </a>
-          <a href="#" className="me-5">
+          <a href="#" className="me-4">
             <div className="d-flex justify-content-center">
               <BiLogOut className="navbar-icon" size={"1.4em"} />
             </div>
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
               <small>BLOG</small>
             </strong>
           </a>
-          <a href="#" className="me-5">
+          <a href="#" className="me-4">
             <div className="d-flex justify-content-center">
               <BiMailSend className="navbar-icon" size={"1.4em"} />
             </div>
@@ -93,22 +93,25 @@ const Navbar: React.FC = () => {
         </nav>
         <div className={`${styles.socialIcons} ${isOpen ? styles.open : ""}`}>
           <a href="#">
-            <AiFillGithub className="social-icon" size={"1.4em"} />
+            <AiFillGithub className="social-icon me-4" size={"1.4em"} />
           </a>
           <a href="#">
-            <AiOutlineTwitter className="social-icon" size={"1.4em"} />
+            <AiOutlineTwitter className="social-icon me-4" size={"1.4em"} />
           </a>
           <a href="#">
-            <AiFillLinkedin className="social-icon" size={"1.4em"} />
+            <AiFillLinkedin className="social-icon me-4" size={"1.4em"} />
           </a>
           <a href="#">
-            <AiOutlineInstagram className="social-icon" size={"1.4em"} />
+            <AiOutlineInstagram className="social-icon me-4" size={"1.4em"} />
           </a>
         </div>
         <div className={styles.copyright}>
           Copyright &#169; 2024 Bisesh Shakya, All rights reserved
         </div>
       </div>
+
+      <div className={`${styles.boxTop}`}></div>
+      <div className={`${styles.boxBottom}`}></div>
 
       <div className={`${styles.content} ${isOpen ? styles.shrink : ""}`}>
         <h1>Welcome to My Website</h1>
